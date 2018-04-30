@@ -1,0 +1,6 @@
+module libmaxminddb [system][extern_c] {
+	header "../maxminddb.h"
+	header "../maxminddb-compat-util.h"
+	header "../maxminddb_unions.h"
+	export *
+}

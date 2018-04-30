@@ -6,6 +6,7 @@
 //  Copyright © 2017 lexrus.com. All rights reserved.
 //
 
+import libmaxminddb
 import Foundation
 
 public struct MMDBContinent {
@@ -151,7 +152,7 @@ final public class MMDB {
         switch getType(list!) {
             
         case MMDB_DATA_TYPE_MAP:
-            var dict = NSMutableDictionary()
+            var dict: [String: Any] = [:]
             var size = getSize(list!)
             
             list = list?.pointee.next

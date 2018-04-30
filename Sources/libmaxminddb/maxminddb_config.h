@@ -8,7 +8,12 @@
 
 #ifndef MMDB_UINT128_IS_BYTE_ARRAY
 /* Define as 1 if we don't have an unsigned __int128 type */
-#define MMDB_UINT128_IS_BYTE_ARRAY 1
+#undef MMDB_UINT128_IS_BYTE_ARRAY
+#endif
+
+#ifndef VERSION
+/* Define as 1 if we don't have an unsigned __int128 type */
+#define VERSION "1.3.2"
 #endif
 
 #endif                          /* MAXMINDDB_CONFIG_H */
